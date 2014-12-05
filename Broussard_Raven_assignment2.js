@@ -46,4 +46,18 @@ var phoneCost = function(cashRegister){
 
 //  String Function
 
-var phoneServicePackage = function(phone, service){
+var phoneServicePackage = function(phone, service)
+var buyToday = ["yes", "no"]
+var customerAdditude = ["let's do this", "I want to check around"
+	console.log("I think that
+	
+//  Array Function
+var ringUp = function (salePrices, regularPrice){
+    for (var i = 0; i < salePrices.length; i++){
+    var lowerDeal = salePrices[i];
+        console.log("Our best deal right now is " + bestPrice + " percent off. Then the next best deal is " + lowerDeal + " percent off.");
+    }
+return lowerDeal;
+};
+
+
