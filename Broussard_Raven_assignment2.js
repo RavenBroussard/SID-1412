@@ -14,19 +14,13 @@ console.log( simCard )
 console.log( cdma )
 
 // Procedure
-var moneySaved = function (bank) {
-	if (bank < 100) {
+
+var moneySaved = function(bank) 
 		console.log("I can't save you any real money today!");
-		}
-		else {
-		console.log("Good News! I can save you loads of money!");
-		};
 		
-		return;
-};
 
 //  Boolean Function
-var sellPhone = function (savesMoney,justService) {
+var sellPhone = function(savesMoney,justService) {
 		while (savesMoney) {
 			if (bank < 100){
 				bank ++;
@@ -39,3 +33,17 @@ var sellPhone = function (savesMoney,justService) {
 	};
 	return true;
 };
+
+//  Number Function
+var phoneCost = function(cashRegister){
+	while (cashRegister < 300){
+		console.log("I have phones for $300 and lower" + customer + "just for you today!");
+		cashRegister+=50;
+	} else {
+		console.log("I have high end phones" + customer + "that have your name on them.");
+	return cashRegister;
+};
+
+//  String Function
+
+var phoneServicePackage = function(phone, service){
