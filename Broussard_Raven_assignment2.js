@@ -38,8 +38,8 @@ var sellPhone = function(savesMoney,justService) {
 var phoneCost = function(cashRegister){
 	while (cashRegister < 300){
 		console.log("I have phones for $300 and lower" + customer + "just for you today!");
-		cashRegister+=50;
-	} else {
+		cashRegister+=50;}
+	
 		console.log("I have high end phones" + customer + "that have your name on them.");
 	return cashRegister;
 };
@@ -47,9 +47,9 @@ var phoneCost = function(cashRegister){
 //  String Function
 
 var phoneServicePackage = function(phone, service)
-var buyToday = ["yes", "no"]
-var customerAdditude = ["let's do this", "I want to check around"
-	console.log("I think that
+
+var customerAdditude = ["let's do this", "I want to check around"];
+	console.log("I think that")
 	
 //  Array Function
 var ringUp = function (salePrices, regularPrice){
