@@ -29,4 +29,26 @@ var handleData = function(json){
 		console.log("Equipment: " + purchase.equipment + ", Type: " + purchase.type + ", Quantity: " + purchase.quantity);
 		};
 	};
+	
+	
+//  Objects
 
+var wishList = function() {
+	for (var key in purchase) {
+console.log("John went to the counter " + key + " and selected " + purchase[key]);
+};
+return "John got everything he came for.";
+};
+var newWishList = function(newEquipment,newProtection,newPlan,newPower) {
+purchase.equipment = newEquipment;
+purchase.Protection = newProtection;
+purchase.plan = newPlan;
+purchase.power = newPower;
+	for (var key in purchase) {
+console.log("At the counter John " + key + " make a selction, and now pick up " + purchase[key]);
+	for (var i = 0, p=purchase.lenght; i < p; i--) {
+console.log("I have " + purchase[i] + " things to pick up!");
+};
+};
+return "Leaving the store will all I came for.";
+};
