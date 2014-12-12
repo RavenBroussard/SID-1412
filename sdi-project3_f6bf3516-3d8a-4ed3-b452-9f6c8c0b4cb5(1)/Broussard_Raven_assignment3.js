@@ -46,7 +46,7 @@ purchase.Protection = newProtection;
 purchase.plan = newPlan;
 purchase.power = newPower;
 	for (var key in purchase) {
-console.log("At the counter John " + key + " make a selction, and now pick up " + purchase[key]);
+console.log("At the counter John " + key + " make a selection, and now pick up " + purchase[key]);
 	for (var i = 0, p=purchase.lenght; i < p; i--) {
 console.log("I have " + purchase[i] + " things to pick up!");
 };
@@ -69,7 +69,7 @@ subtraction(800,600);
 
 // Booleans
 
-var cost = itemsCost[17,480,66,10];
+//var cost = itemsCost[17,480,66,10];
 var inventoryCost = function ([cases, phone, activation, chargers]) {
 var totalCost = (cases+cases)+phone+activation+(chargers+chargers);
 var moneyLeft = money-totalCost;
@@ -98,5 +98,43 @@ var airtimeLeft = 11;
 	console.log(customerName + " has no more money to buy airtime!");
 return 0;
 };
-var allGone = spend(600);}
+var broke = spend(200);}
 
+
+// String 
+
+var finishedShopping = function(pay, playGames) {
+var allDone = "I get to enjoy my new phone!";
+	console.log(pay + " When I learn how to work this phone " + playGames + " I can't wait to enjoy it, " + allDone);
+		return allDone;
+	};
+var afterShopping = finishedShopping("After I am done shopping, I must go home.","I can't wait to play with my phone.");
+
+
+// Array Function
+var games = function(howMany, time) {
+var gameName = ["Farm Heroes", "Candy Crush"];
+	gameName.push("Kick the Buddy");
+		console.log("Now that my downloads are finished i have " + time + " minutes to play my " + gameName.length + " on my new phone before I have to go to work.");
+			for (var i=0, g=gameName.length; i < g; i++) {
+var timeLeft = time-=60;
+		if (timeLeft >= 0) {
+	console.log("After I play " + gameName[i] + ", I have " + timeLeft + " minutes left before work!");
+		} else {
+		console.log("I have no time left to play games!");
+		};
+	};
+var work = "This phone is awesome, the games are great, now I need to get to work!";
+console.log(work);
+return work;
+};
+var timeForWork = games(2,80);
+
+
+// Returned Variables
+
+
+console.log("How much do " + customerName + " have after buying airtime: " + broke);
+console.log("If lessons are finished: " + afterShopping);
+console.log(timeToPlay);  
+console.log("Is it true that " + customerName + " have money left: " + canBuyAirtime);
