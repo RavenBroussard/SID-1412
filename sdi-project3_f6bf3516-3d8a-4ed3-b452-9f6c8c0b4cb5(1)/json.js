@@ -1,6 +1,6 @@
 //
 var json = {
-	"Purchase" : [
+	"purchase" : [
 		{	"equipment": "Phone",
 			"type": "Samsung Phone",
 			"quantity": 1
@@ -16,10 +16,6 @@ var json = {
 		{	"equipment": "Power",
 			"type": "charger",
 			"quantity": 2
-			},		
-			
-			
-			
-			
-			
-	
+			},
+			]
+			};
