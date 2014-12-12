@@ -17,6 +17,7 @@ var inventory = {
 	"plan": "activation & month of service",
 	"power": "chargers"
 	};
+var broke = -200;
 
 console.log(customerName + " enters " + store + " to get set up with a new phone and new service." )
 console.log(customerName + " has a budget of " + money + " to spend today.")
@@ -98,7 +99,6 @@ var airtimeLeft = 11;
 	console.log(customerName + " has no more money to buy airtime!");
 return 0;
 };
-var broke = spend(200);}
 
 
 // String 
@@ -137,4 +137,4 @@ var timeForWork = games(2,80);
 console.log("How much do " + customerName + " have after buying airtime: " + broke);
 console.log("If lessons are finished: " + afterShopping);
 console.log(timeToPlay);  
-console.log("Is it true that " + customerName + " have money left: " + canBuyAirtime);
+console.log("Is it true that " + customerName + " have money left: " + canBuyAirtime);}
