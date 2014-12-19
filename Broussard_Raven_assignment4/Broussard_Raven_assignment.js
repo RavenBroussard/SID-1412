@@ -4,10 +4,25 @@
 */
 
 //  Global Variables
+var myLibrary = function() {
 
 // String Functions
 // Problem 1  : Does a string follow a 123-456-7890 like a phone number?
+var checkPhoneNumber = function(phoneNumber) {
 
+var start = phoneNumber.indexOf("-");
+var end = phoneNumber.lastIndexOf("-"); 
+var firstSet = phoneNumber.substring(0, start);
+var secondSet = phoneNumber.substring(4, end);
+var thirdSet = phoneNumber.substring(8, 12);
+var numberCheck = firstSet + "-" + secondSet + "-" + + thirdSet;
+
+	if(phoneNumber === numberCheck) {
+	return true;
+}	else {
+	return false;
+}
+};
 
 
 // Problem 2  : Does a string follow an aaa@bbb.ccc pattern like an email address?
@@ -49,8 +64,17 @@ function addCaps(changeCase) {
 
 // Problem 12 : Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects: “a” + [{a:2},{a:3},{a:1}] --> [{a:1},{a:2},{a:3}].
 
-// Outputs
+//  Returns
+	return {
+		"checkPhoneNumber" : checkPhoneNumber,
+		"addCaps" : addCaps,
+	}
+}
+//  Inputs
+var input = new myLibrary();
 
-addCaps("i hope this works mr. lewis!")
+// Outputs
+console.log(input.checkPhoneNumber("123-456-7890"));
+console.log(input.addCaps("i hope this works mr. lewis!"));
 
 
