@@ -73,8 +73,20 @@ var fixedDecimal = function(place) {
 
 // Problem 8  : Find the number of hours or days difference between two dates.
 
+var timePasted = function (startDate, endDate) {
+
+	var fullDay = 1000 * 60 * 60 * 24; 
+	var start = new Date(startDate);
+	var end = new Date(endDate);
+	var comp = Math.ceil((end - start) / fullDay);
+	return comp;
+};
 // Problem 9  : Given a string version of a number, such as “42”, return the value as an actual Number data type, such as 42.
 
+var changeType = function(change){
+	var stringNumber = parseInt(change);
+	return stringNumber;
+}
 // Array Functions
 // Problem 10 : Find the smallest value in an array than is greater than a given number.
 
@@ -90,6 +102,9 @@ var fixedDecimal = function(place) {
 		"addCaps" : addCaps,
 		"separatorChange" : separatorChange,
 		"fixedDecimal" : fixedDecimal,
+		"timePasted" : timePasted,
+		"changeType" : changeType,
+
 	}
 }
 //  Inputs
@@ -100,7 +115,7 @@ var input = new myLibrary();
 
 console.log(input.checkPhoneNumber("123-456-7890"));
 console.log(input.addCaps("i hope this works mr. lewis!"));
-console.log(input.separatorChange("a,b,c", ",", "/"))
+console.log(input.separatorChange("a,b,c", ",", "/"));
 console.log(input.fixedDecimal(980.736485));
-
-
+console.log(input.timePasted("November 23, 2014", "December 18, 2014") + " days since we started SDI.");
+console.log(input.changeType("42")):
