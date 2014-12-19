@@ -118,4 +118,4 @@ console.log(input.addCaps("i hope this works mr. lewis!"));
 console.log(input.separatorChange("a,b,c", ",", "/"));
 console.log(input.fixedDecimal(980.736485));
 console.log(input.timePasted("November 23, 2014", "December 18, 2014") + " days since we started SDI.");
-console.log(input.changeType("42")):
+console.log(input.changeType("42"));
