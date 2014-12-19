@@ -8,6 +8,7 @@ var myLibrary = function() {
 
 // String Functions
 // Problem 1  : Does a string follow a 123-456-7890 like a phone number?
+
 var checkPhoneNumber = function(phoneNumber) {
 
 var start = phoneNumber.indexOf("-");
@@ -32,6 +33,7 @@ var numberCheck = firstSet + "-" + secondSet + "-" + + thirdSet;
 
 
 // Problem 4  : Title-case a string (split into words, then uppercase the first letter of each word).
+
 function addCaps(changeCase) {
 	String.prototype.toProperCase = function () {
 		return this.replace(/\w\S*/g, function (words) {
@@ -44,10 +46,27 @@ function addCaps(changeCase) {
 
 // Problem 5  : Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: “a,b,c” + “,” + “/” --> “a/b/c”.
 
+var separatorChange = function(items, sepItems1, sepItems2) {
 
+var message = "";
+var sepArray = items.split(sepItems1);
+var i = 0;
+
+while(i < sepArray.length) {
+
+var newChange = sepArray[i];
+i++;
+message += newChange + sepItems2;
+}
+return message;
+}
 // Number Functions
 // Problem 6  : Format a number to use a specific number of decimal places as for money: 2.1 --> 2.10.
 
+var fixedDecimal = function(place) {
+	var decimalPlace = place.toFixed(3);
+	return decimalPlace;
+}
 
 // Problem 7  : Fuzzy-match a number: is the number above or below a number within a certain percent?
 
@@ -65,16 +84,23 @@ function addCaps(changeCase) {
 // Problem 12 : Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects: “a” + [{a:2},{a:3},{a:1}] --> [{a:1},{a:2},{a:3}].
 
 //  Returns
+	
 	return {
 		"checkPhoneNumber" : checkPhoneNumber,
 		"addCaps" : addCaps,
+		"separatorChange" : separatorChange,
+		"fixedDecimal" : fixedDecimal,
 	}
 }
 //  Inputs
+
 var input = new myLibrary();
 
 // Outputs
+
 console.log(input.checkPhoneNumber("123-456-7890"));
 console.log(input.addCaps("i hope this works mr. lewis!"));
+console.log(input.separatorChange("a,b,c", ",", "/"))
+console.log(input.fixedDecimal(980.736485));
 
 
